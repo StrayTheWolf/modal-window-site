@@ -1,0 +1,18 @@
+@import "modal.css";
+@import "modal-inner.css";
+@import "variables.css";
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: var(--color-lite-brown);
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+

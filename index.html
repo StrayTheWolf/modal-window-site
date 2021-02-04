@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Modal Window</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+</head>
+<body>
+<div class="container">
+    <h1 class="modal__title">Соглашение нахождения на сайте</h1>
+    <div class="modal__item">
+        <a class="modal__link" href="#openModal">Нажмите что бы прочитать важную информацию</a>
+    </div>
+    <div class="modal-opened" id="openModal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <div class="modal__header">
+                    <h3 class="modal__title">Соглашение использования сайта</h3>
+                    <a class="modal__link-close" href="#close">×</a>
+                </div>
+                <div class="modal__text">
+                    Находясь здесь вы соглашаетесь на то, что данный сайт собирает и хранит вашу лчиную информацию,
+                    в противном случае, немедленно покиньте сайт
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

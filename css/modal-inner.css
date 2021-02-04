@@ -1,0 +1,48 @@
+/* отображение модального окна */
+.modal-opened:target {
+    opacity: 1;
+    pointer-events: auto;
+    overflow-y: auto;
+}
+
+/* ширина модального окна и его отступы от экрана */
+.modal__dialog {
+    position: relative;
+    width: auto;
+    margin: 10px;
+}
+
+@media (min-width: 576px) {
+    .modal__dialog {
+        max-width: 500px;
+        margin: 30px auto;
+    }
+}
+
+.modal__content {
+    background-color: var(--color-white);
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .3rem;
+}
+
+.modal__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid var(--color-gray);
+}
+
+.modal__link-close {
+    font-family: sans-serif;
+    font-size: 24px;
+    color: var(--color-black);
+    opacity: .5;
+    text-decoration: none;
+}
+
+.modal__text {
+    position: relative;
+    padding: 15px;
+    overflow: auto;
+}
